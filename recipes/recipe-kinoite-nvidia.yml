@@ -88,7 +88,7 @@ modules:
 
   - type: bling
     install:
-    - ublue-update # https://github.com/ublue-os/ublue-update
+      - ublue-update # https://github.com/ublue-os/ublue-update
 
   - type: brew # Install homebrew
   # Packages
