@@ -21,7 +21,7 @@ modules:
     install:
       # - micro
       # - starship
-      - steam
+      # - steam
       - torbrowser-launcher      
       - fira-code-fonts
       - fastfetch
