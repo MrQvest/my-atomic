@@ -28,6 +28,14 @@ modules:
       - rclone
       - btop
       - torbrowser-launcher
+      - fira-code-fonts
+      - fish
+      - google-noto-sans-runic-fonts
+      - fastfetch
+    # - nerd-fonts
+      - btop
+      - nvtop
+      - gh      
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -42,7 +50,35 @@ modules:
       install:
         # - org.mozilla.firefox
         # - org.gnome.Loupe
+        - chat.simplex.simplex # SimpleX Chat
+        - com.github.Anuken.Mindustry # Mindustry
+        - com.github.wwmm.easyeffects # Easy Effects
         - com.heroicgameslauncher.hgl # Heroic Games Launcher
+        - com.obsproject.Studio # OBS Studio
+        - dev.vencord.Vesktop # Vesktop
+        - io.mpv.Mpv # mpv
+        - info.smplayer.SMPlayer # SMPlayer
+        - md.obsidian.Obsidian # Obsidian
+        - org.gimp.GIMP # GIMP
+        - org.inkscape.Inkscape # Inkscape
+        - org.kartkrew.RingRacers # Ring Racers
+        - org.kde.kdenlive # Kdenlive
+        - org.keepassxc.KeePassXC # KeePassXC
+        - org.localsend.localsend_app # LocalSend
+        - org.mozilla.Thunderbird # Thunderbird
+        - org.prismlauncher.PrismLauncher # Prism Launcher
+        - org.signal.Signal # Signal Desktop
+        - sh.ppy.osu # osu!
+        - app/org.wesnoth.Wesnoth/x86_64/stable # Battle for Wesnoth
+        - com.shatteredpixel.shatteredpixeldungeon # Shattered Pixel Dungeon
+        - io.github.martchus.syncthingtray # Syncthing Tray
+        - io.github.picocrypt.Picocrypt # Picocrypt
+        - com.calibre_ebook.calibre # calibre
+        - net.openra.OpenRA # openRA
+        - net.fasterland.converseen # Converseen
+        - org.fooyin.fooyin # fooyin
+        - org.qbittorrent.qBittorrent # qBittorrent
+              
       # remove:
         # - org.gnome.eog
     # user: {} # Also add Flathub user repo, but no user packages
