@@ -69,7 +69,7 @@ modules:
         - org.prismlauncher.PrismLauncher # Prism Launcher
         - org.signal.Signal # Signal Desktop
         - sh.ppy.osu # osu!
-        - app/org.wesnoth.Wesnoth/x86_64/stable # Battle for Wesnoth
+        - org.wesnoth.Wesnoth # Battle for Wesnoth
         - com.shatteredpixel.shatteredpixeldungeon # Shattered Pixel Dungeon
         - io.github.martchus.syncthingtray # Syncthing Tray
         - io.github.picocrypt.Picocrypt # Picocrypt
