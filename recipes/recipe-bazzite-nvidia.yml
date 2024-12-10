@@ -1,0 +1,93 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
+# image will be published to ghcr.io/<user>/<name>
+name: bazzite-nvidia
+# description will be included in the image's metadata
+description: This is my personal OS image.
+
+# the base image to build on top of (FROM) and the version tag to use
+base-image: ghcr.io/ublue-os/bazzite-nvidia
+image-version: latest # latest is also supported if you want new updates ASAP
+
+# module configuration, executed in order
+# you can include multiple instances of the same module
+modules:
+  - type: files
+    files:
+      - source: system
+        destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
+
+  - type: rpm-ostree
+    # repos:
+      # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
+    install:
+      # - micro
+      # - starship
+      - restic
+      - rclone
+      - btop
+      - torbrowser-launcher
+      - fish
+      - google-noto-sans-runic-fonts
+    # - nerd-fonts
+      - btop
+      - gh      
+    remove:
+      # example: removing firefox (in favor of the flatpak)
+      # "firefox" is the main package, "firefox-langpacks" is a dependency
+      # - firefox
+      # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+      - htop
+      - lutris
+      - waydroid
+      # - vim
+  - type: default-flatpaks
+    notify: true # Send notification after install/uninstall is finished (true/false)
+    system:
+      # If no repo information is specified, Flathub will be used by default
+      install:
+        # - org.mozilla.firefox
+        # - org.gnome.Loupe
+        - chat.simplex.simplex # SimpleX Chat
+        - com.github.Anuken.Mindustry # Mindustry
+        - com.github.wwmm.easyeffects # Easy Effects
+        - com.heroicgameslauncher.hgl # Heroic Games Launcher
+        - com.obsproject.Studio # OBS Studio
+        - dev.vencord.Vesktop # Vesktop
+        - io.mpv.Mpv # mpv
+        - info.smplayer.SMPlayer # SMPlayer
+        - md.obsidian.Obsidian # Obsidian
+        - org.gimp.GIMP # GIMP
+        - org.inkscape.Inkscape # Inkscape
+        - org.kartkrew.RingRacers # Ring Racers
+        - org.kde.kdenlive # Kdenlive
+        - org.keepassxc.KeePassXC # KeePassXC
+        - org.localsend.localsend_app # LocalSend
+        - org.mozilla.Thunderbird # Thunderbird
+        - org.prismlauncher.PrismLauncher # Prism Launcher
+        - org.signal.Signal # Signal Desktop
+        - sh.ppy.osu # osu!
+        - org.wesnoth.Wesnoth # Battle for Wesnoth
+        - com.shatteredpixel.shatteredpixeldungeon # Shattered Pixel Dungeon
+        - io.github.martchus.syncthingtray # Syncthing Tray
+        - io.github.picocrypt.Picocrypt # Picocrypt
+        - com.calibre_ebook.calibre # calibre
+        - net.openra.OpenRA # openRA
+        - net.fasterland.converseen # Converseen
+        - org.fooyin.fooyin # fooyin
+        - org.qbittorrent.qBittorrent # qBittorrent
+              
+      # remove:
+        # - org.gnome.eog
+    # user: {} # Also add Flathub user repo, but no user packages
+
+  - type: bling
+    install:
+        - ublue-update # https://github.com/ublue-os/ublue-update
+
+  - type: brew # install homebrew https://brew.sh/
+
+  - type: chezmoi
+    repository: "https://github.com/MrQvest/.dotfiles"
+
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully
