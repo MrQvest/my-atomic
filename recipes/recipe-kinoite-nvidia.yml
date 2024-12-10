@@ -34,7 +34,7 @@ modules:
       # - firefox
       # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
       - htop
-      - vim
+      # - vim
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
@@ -46,6 +46,15 @@ modules:
       # remove:
         # - org.gnome.eog
     # user: {} # Also add Flathub user repo, but no user packages
+
+  - type: bling
+    install:
+        - ublue-update # https://github.com/ublue-os/ublue-update
+
+  - type: brew # install homebrew https://brew.sh/
+
+  - type: chezmoi
+    repository: "https://github.com/MrQvest/.dotfiles"
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
