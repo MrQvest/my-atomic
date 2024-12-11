@@ -45,7 +45,6 @@ modules:
       - firewall-config
       - input-remapper
       - kcharselect
-      - kbd-layout-viewer5
       - krfb
       - kwalletmanager5
       - kjournaldbrowser
