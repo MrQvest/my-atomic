@@ -40,6 +40,7 @@ modules:
       - lutris
       - waydroid
       - waydroid-selinux
+      - ptyxis
       # - vim
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
@@ -62,7 +63,6 @@ modules:
         - org.kartkrew.RingRacers # Ring Racers
         - org.kde.kdenlive # Kdenlive
         - org.keepassxc.KeePassXC # KeePassXC
-        - org.localsend.localsend_app # LocalSend
         - org.mozilla.Thunderbird # Thunderbird
         - org.prismlauncher.PrismLauncher # Prism Launcher
         - org.signal.Signal # Signal Desktop
