@@ -43,7 +43,7 @@ modules:
       - rp-config
       - fcitx5
       - firewall-config
-      - input-remapper-gtk
+      - input-remapper
       - kcharselect
       - kbd-layout-viewer5
       - krfb
