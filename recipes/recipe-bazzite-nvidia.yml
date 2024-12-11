@@ -38,10 +38,21 @@ modules:
       # "firefox" is the main package, "firefox-langpacks" is a dependency
       # - firefox
       # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+      - btrfs-assistant
       - lutris
+      - rp-config
+      - fcitx5
+      - firewall-config
+      - input-remapper-gtk
+      - kcharselect
+      - kbd-layout-viewer5
+      - krfb
+      - kwalletmanager5
+      - kjournaldbrowser
       - waydroid
       - waydroid-selinux
-      - wine
+      - webapp-manager
+      - wine-core
       - ptyxis
       # - vim
   - type: default-flatpaks
