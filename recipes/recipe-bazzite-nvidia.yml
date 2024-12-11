@@ -27,6 +27,7 @@ modules:
       - rclone
       - btop
       - torbrowser-launcher
+      - firefox
       - fish
       - google-noto-sans-runic-fonts
     # - nerd-fonts
