@@ -41,6 +41,7 @@ modules:
       - lutris
       - waydroid
       - waydroid-selinux
+      - wine
       - ptyxis
       # - vim
   - type: default-flatpaks
