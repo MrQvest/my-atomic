@@ -47,7 +47,6 @@ modules:
       - kcharselect
       - krfb
       - kwalletmanager5
-      - kjournaldbrowser
       - waydroid
       - waydroid-selinux
       - webapp-manager
