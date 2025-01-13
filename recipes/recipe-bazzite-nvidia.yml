@@ -97,6 +97,8 @@ modules:
         - net.fasterland.converseen # Converseen
         - org.fooyin.fooyin # fooyin
         - org.qbittorrent.qBittorrent # qBittorrent
+        - io.github.limo_app.limo # Limo Mod Manager
+        - com.spacestation14.Launcher # Space Station 14 Launcher        
               
       # remove:
         # - org.gnome.eog
