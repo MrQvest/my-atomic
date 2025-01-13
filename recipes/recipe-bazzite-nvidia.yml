@@ -41,15 +41,18 @@ modules:
       - btrfs-assistant
       - lutris
       - fcitx5
+      - fcitx5-mozc
       - firewall-config
       - input-remapper
       - kcharselect
       - krfb
+      - krfb-libs
       - kwalletmanager5
       - waydroid
       - waydroid-selinux
       - webapp-manager
       - wine-core
+      - wine-pulseaudio
       - ptyxis
       # - vim
   - type: default-flatpaks
