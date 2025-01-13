@@ -42,6 +42,7 @@ modules:
       - lutris
       - fcitx5
       - fcitx5-mozc
+      - fcitx5-data
       - firewall-config
       - input-remapper
       - kcharselect
@@ -52,6 +53,7 @@ modules:
       - waydroid-selinux
       - webapp-manager
       - wine-core
+      - wine-common
       - wine-pulseaudio
       - ptyxis
       # - vim
