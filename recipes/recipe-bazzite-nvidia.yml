@@ -41,8 +41,10 @@ modules:
       - btrfs-assistant
       - lutris
       - fcitx5
+      - fcitx5-chinese-addons
       - fcitx5-mozc
       - fcitx5-data
+      - fcitx5-lua
       - firewall-config
       - input-remapper
       - kcharselect
@@ -52,6 +54,8 @@ modules:
       - waydroid
       - waydroid-selinux
       - webapp-manager
+      - winetricks
+      - wine-alsa
       - wine-core
       - wine-common
       - wine-pulseaudio
