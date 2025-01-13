@@ -34,6 +34,7 @@ modules:
       - fastfetch
     # - nerd-fonts
       - btop
+      - neovim
       - nvtop
       - gh      
     remove:
