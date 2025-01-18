@@ -37,7 +37,8 @@ modules:
       - btop
       - neovim
       - nvtop
-      - gh      
+      - gh
+      - vlc
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -59,7 +60,6 @@ modules:
         - com.obsproject.Studio # OBS Studio
         - dev.vencord.Vesktop # Vesktop
         - io.mpv.Mpv # mpv
-        - info.smplayer.SMPlayer # SMPlayer
         - md.obsidian.Obsidian # Obsidian
         - org.gimp.GIMP # GIMP
         - org.inkscape.Inkscape # Inkscape
