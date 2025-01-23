@@ -49,7 +49,6 @@ modules:
       - vim
       - firewall-config
       - krfb
-      - ktnef
       - kfind
       - kcharselect
       - virtualbox-guest-additions
