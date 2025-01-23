@@ -48,7 +48,6 @@ modules:
       - htop
       - vim
       - firewall-config
-      - kmousetool
       - kmouth
       - kpat
       - krdc
