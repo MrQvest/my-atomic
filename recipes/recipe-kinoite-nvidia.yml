@@ -48,7 +48,6 @@ modules:
       - htop
       - vim
       - firewall-config
-      - krdc
       - krfb
       - ktnef
       - kfind
