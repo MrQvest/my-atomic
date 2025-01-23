@@ -46,7 +46,23 @@ modules:
       # - firefox
       # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
       - htop
-      # - vim
+      - vim
+      - firewall-config
+      - kmousetool
+      - kmouth
+      - kpat
+      - krdc
+      - krfb
+      - ktnef
+      - kfind
+      - kcharselect
+      - virtualbox-guest-additions
+      - qemu-guest-agent
+      - kwalletmanager5
+      - krdp
+      - kjournald
+      - im-chooser
+      - kdebugsettings
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
@@ -81,6 +97,7 @@ modules:
         - net.fasterland.converseen # Converseen
         - org.fooyin.fooyin # fooyin
         - org.qbittorrent.qBittorrent # qBittorrent
+        - io.github.limo_app.limo # Limo Mod Manager
               
       # remove:
         # - org.gnome.eog
