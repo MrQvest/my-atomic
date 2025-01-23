@@ -47,10 +47,10 @@ modules:
       # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
       - htop
       - hwloc-libs
-      - vim
-      - vim-common
-      - vim-filesystem
-      - xxd
+      #- vim
+      #- vim-common
+      #- vim-filesystem
+      #- xxd
       - firewall-config
       - krfb
       - krfb-libs
