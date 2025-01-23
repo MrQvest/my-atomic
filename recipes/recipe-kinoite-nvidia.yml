@@ -61,7 +61,6 @@ modules:
       - kwalletmanager5
       - krdp
       - kjournald
-      - im-chooser
       - kdebugsettings
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
