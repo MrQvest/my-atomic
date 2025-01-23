@@ -46,16 +46,31 @@ modules:
       # - firefox
       # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
       - htop
+      - hwloc-libs
       - vim
+      - vim-common
+      - vim-filesystem
+      - xxd
       - firewall-config
       - krfb
+      - krfb-libs
+      - libvncserver
       - kfind
       - kcharselect
       - virtualbox-guest-additions
       - qemu-guest-agent
       - kwalletmanager5
       - krdp
+      - krdp-libs
+      - SDL2_ttf
+      - freerdp
+      - freerdp-libs
+      - freerdp2-libs
+      - libwinpr
+      - libwinpr2
+      - uriparser
       - kjournald
+      - kjournald-libs
       - kdebugsettings
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
