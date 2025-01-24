@@ -108,6 +108,8 @@ modules:
         - org.fooyin.fooyin # fooyin
         - org.qbittorrent.qBittorrent # qBittorrent
         - io.github.limo_app.limo # Limo Mod Manager
+        - org.kde.okular # Okular
+        - org.kde.gwenview # Gwenview
               
       # remove:
         # - org.gnome.eog
