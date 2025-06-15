@@ -27,6 +27,7 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     /ctx/amd.sh && \
     /ctx/steam.sh && \
     /ctx/default.sh && \
+    /ctx/default-remove.sh && \
     ostree container commit
     
 ### LINTING
