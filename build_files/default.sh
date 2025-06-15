@@ -2,7 +2,7 @@
 
 set -ouex pipefail
 
-DEFAULT_PACKAGES(
+DEFAULT_PACKAGES=(
   langpacks-pt_BR
   heif-pixbuf-loader
   libheif-tools
