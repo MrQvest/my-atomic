@@ -25,6 +25,8 @@ RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     /ctx/build.sh && \
     /ctx/rpmfusion.sh && \
     /ctx/amd.sh && \
+    /ctx/steam.sh && \
+    /ctx/default.sh && \
     ostree container commit
     
 ### LINTING
