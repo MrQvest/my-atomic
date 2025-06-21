@@ -5,6 +5,7 @@ modules:
 
     replace:
       - from-repo: fedora
+        allow-erasing: true
         packages:
           - old: ffmpeg-free
             new: ffmpeg
