@@ -16,4 +16,3 @@ modules:
   - from-file: common/graphics-amd.yml
   - from-file: common/desktop.yml
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
-
