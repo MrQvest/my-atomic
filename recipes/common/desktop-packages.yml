@@ -1,0 +1,16 @@
+type: dnf
+install:
+  packages:
+    - btop
+    - fastfetch
+    - fish
+    - gh
+    - langpacks-pt_BR
+    - neovim
+    - nvtop
+    - rclone
+    - restic
+    - steam
+    - tailscale
+    - torbrowser-launcher
+    - yt-dlp

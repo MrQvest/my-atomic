@@ -1,0 +1,18 @@
+type: dnf
+repos:
+  nonfree: rpmfusion
+
+replace:
+  - from-repo: fedora
+    packages:
+      - old: ffmpeg-free
+        new: ffpmeg
+install:
+  packages:
+    - rpmfusion-free-release-tainted
+
+type: dnf
+install:
+  packages:
+    - libdvdcss
+    - rpmfusion-nonfree-release-tainted
