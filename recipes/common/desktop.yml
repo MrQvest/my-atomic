@@ -1,3 +1,7 @@
 modules:
   - from-file: common/desktop-packages.yml
   - from-file: common/desktop-packages-remove.yml
+  - type: systemd
+    system:
+      enabled:
+        - bootc-fetch-apply-updates.timer
