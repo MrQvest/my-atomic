@@ -7,7 +7,7 @@ modules:
       - from-repo: fedora
         packages:
           - old: ffmpeg-free
-            new: ffpmeg
+            new: ffmpeg
     install:
       packages:
         - rpmfusion-free-release-tainted
