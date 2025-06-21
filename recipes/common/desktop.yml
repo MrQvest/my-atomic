@@ -1,3 +1,6 @@
 modules:
   - from-file: common/desktop-packages.yml
   - from-file: common/desktop-packages-remove.yml
+  - type: bling
+    install:
+      - ublue-update
